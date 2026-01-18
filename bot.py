@@ -10,6 +10,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
+logger = logging.getLogger(__name__)
 
 # Файл для хранения данных пользователей
 DATA_FILE = 'user_data.json'
@@ -131,7 +132,7 @@ def main():
     
     # Запускаем бота
     print("Бот запущен...")
-    application.run_polling(allowed_updates=Update.ALL_UPDATES)
+    application.run_polling()  # Убрали allowed_updates
 
 if __name__ == '__main__':
     main()
