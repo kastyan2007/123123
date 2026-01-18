@@ -119,7 +119,7 @@ async def top(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Основная функция
 def main():
     # Токен вашего бота (замените на свой)
-    TOKEN = "ВАШ_ТОКЕН_БОТА"
+    TOKEN = "8555836186:AAHhkR0xh9LNdAyGxQORHV41ZgPo0oFvgGM"
     
     # Создаём приложение
     application = Application.builder().token(TOKEN).build()
